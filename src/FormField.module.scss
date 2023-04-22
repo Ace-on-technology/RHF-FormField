@@ -1,0 +1,37 @@
+.FormField {
+  display: block;
+
+  .label {
+    margin-bottom: 0.25rem;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    line-height: 1rem;
+
+    > :not([hidden]) ~ :not([hidden]) {
+      margin-top: 0.25rem;
+    }
+  }
+
+  .info-text {
+    font-style: italic;
+    color: rgb(107 114 128);
+  }
+
+  .error {
+    color: rgb(220 38 38);
+    transition: 150ms height cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .h-0 {
+    height: 0;
+  }
+
+  .h-1rem {
+    height: 1rem;
+  }
+}
